@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
-//change t #3
-=======
-//change t
->>>>>>> e6de17ee1483499527a92c3fe9b0b8980473c1cd
+// test 3 ad fadf asd
 /**
  * Topnew CMS db v5.5.3 - Released on 2016.05.05
  * The MIT License (MIT) Copyright (c) 1998-2015, Topnew Geo, topnew.net/cms
