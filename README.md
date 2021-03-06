@@ -1,0 +1,15 @@
+# Topnew CMS
+
+Topnew CMS is a tiny MVC frame work which contains only one file: **vendor/topnew/src/Cms.php**, it is only 5kb in size.
+
+Topnew\CMS is actually a router + controller, without Modal or View. It uses Topnew\Db to do all database tasks for the modal, and it uses Blade or Twig for view.
+
+There are several optional supporting classes to make this tiny MVC working smoothly:
+
+* Topnew\Ajax -- api ajax calls
+* Topnew\Auth -- login authentication
+* Topnew\Chart-- produce nice charts
+* Topnew\Data -- handle all POST / GET data veridation and sanitization
+* Topnew\Db   -- handle all database tasks
+
+For wiki docs as how to use above classes, please visit: http://topnew.net
