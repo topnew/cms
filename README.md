@@ -13,3 +13,21 @@ There are several optional supporting classes to make this tiny MVC working smoo
 * Topnew\Db   -- handle all database tasks
 
 For wiki docs as how to use above classes, please visit: http://topnew.net
+
+Here is a quick example of Topnew\Db:
+
+$data = $db->select('id, first_name, last_name, gender')
+
+->from('users AS u')
+
+->join(['c' => 'companies'], 'c.id = u.company_id')
+
+->where('c.company_name', 'like', 'google')
+
+->where('u.name', '!=', ['Ben', 'John'])
+
+->order('u.last_name')
+
+->limit(200)
+
+->all();
