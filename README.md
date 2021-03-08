@@ -35,3 +35,9 @@ $data = $db->select('id, first_name, last_name, gender')
 ->limit(200)
 
 ->all();
+
+$id = $db->insert('users', ['first_name' => 'Topnew', 'last_name' => 'Geo', ]);
+
+$db->where(...)->delete('users');
+
+$db->where(...)->update('users', ['first_name' => 'Ben',]);
