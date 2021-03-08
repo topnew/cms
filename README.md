@@ -16,6 +16,9 @@ For wiki docs as how to use above classes, please visit: http://topnew.net
 
 Here is a quick example of Topnew\Db:
 
+$config = ['host' => 'localhost', 'user' => 'root', 'pass' => 'secret'];
+$db = new Topnew\Db($config);
+
 $data = $db->select('id, first_name, last_name, gender')
 
 ->from('users AS u')
