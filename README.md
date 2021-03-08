@@ -36,8 +36,8 @@ $data = $db->select('id, first_name, last_name, gender')
 
 ->all();
 
-$id = $db->insert('users', ['first_name' => 'Topnew', 'last_name' => 'Geo', ]);
+>  $id = $db->insert('users', ['first_name' => 'Topnew', 'last_name' => 'Geo', ]);
 
->>  $db->where('id', '>', 5000)->where('gender', 'Male')->delete('users');
+>  $db->where('id', '>', 5000)->where('gender', 'Male')->delete('users');
 
->>  $db->where('id', 1)->update('users', ['first_name' => 'Ben',]);
+>  $db->where('id', 1)->update('users', ['first_name' => 'Ben',]);
